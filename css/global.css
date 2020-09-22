@@ -1,0 +1,130 @@
+/*==============RESET==================*/
+* {margin: 0; padding: 0; font-size: 100%; border: none;outline: none; font-weight: 300; box-sizing: border-box;
+font-family: 'poppins', sans-serif;}
+body{background-color: #fff ;}
+a{text-decoration: none;}
+ul{list-style: none;}
+img{max-width: 100%;}
+/*======== CONTAINER ===========*/
+.container {width: 100%; float: left;padding: 3% 4%; text-align: center;}
+
+/*BG_COLORS*/
+.bg-black{background-color: #000;}
+.bg-black-smooth{background-color: #5dc43e;}
+.bg-white{background-color: #fff;}
+.bg-green{background-color:#4aaf26;} 
+.space{margin-top: 120px;}
+/*Cabecalho*/
+.cabecalho{ height: 120px ;position:fixed; background: #fff;}
+.logo{width: 100px; height:90px ; float: left; background:url(../img/logo-mobile.png) center center/ 100px no-repeat; font-size: 0;}
+.btn-menu{width: 50px; height: 50px; float: right; text-align: center; color: white; border-radius:50px ; cursor: pointer; margin-top: 5px;}
+
+/*MENU*/
+
+.menu{display: none ; width: 100%; height: 100%; position: fixed; background-color:#fff;top: 0; left: 0;}
+.btn-close{ font-size: 1.5em; color: #000; float: right; cursor: pointer; margin:2% 3% 0 0;}
+.menu ul {width: 100%; float: left; text-align:center ;}
+.menu li {padding: 1.5%;}
+.menu li a { font-size: 2em; color: #000; padding:  1.5% 3%;}   
+.menu li a:hover{ border:1px solid #4aaf26;}
+
+/*Banner*/
+.banner{ background: url(../img/fundo-banner.png) no-repeat fixed; height: 40%;}
+.title{width: 100%;}
+.title  h2{font-size: 2.5em; color:#fff; font-weight: 500; margin: 0;}
+.title h3{font-size: 1.5em; color:#fff;font-weight: 100;}
+.title h4{font-size: 1em; color:#fff}
+.buttons{width: 100%; margin-top: 2%; }
+.buttons img {float: right; width: 40px; height: 40px;}
+.buttons i {float: right; display: block;}
+.buttons a{text-decoration: none;}
+.btn {width: 100%; font-size: 1.5em; text-align: left; cursor: pointer; padding: 5%; border-radius: 10px;}
+.btn-cadastrar{color: white;}
+.btn-sobre{color:black; margin-top: 2%;}
+.interesse{ padding: 2%; border-radius: 3% ; background: #4aaf26; margin: 5%; color: #fff;}
+
+.importancia{width: 100%;}
+.importancia img{width: 45%;  margin-top: 5%; margin-right: 5%;  align-content: center;}
+.importancia h2{font-size: 2.5rem; color: #4aaf26; margin: 5px;}
+.importancia p{text-align: justify; text-indent: 8px; margin-top: 2%; font-size: 1rem;}
+
+.vantagens{width: 100%;padding: 2%;}
+.vantagens img{width: 45%;  margin-top: 5%; margin-right: 5%;  align-content: center;}
+.vantagens h2{font-size: 2.5rem; color: #4aaf26; margin: 5px;}
+.vantagens p {text-align: justify; text-indent: 8px; margin-top: 2%; font-size: 1rem; margin-bottom: 2%;}
+.vantagens ul{ font-weight: 200; text-align: left; list-style-type: disc; margin-left:3%;}  
+
+
+
+/* Servicos*/
+.servico{width: 100%; height: 100%; text-align: left; border-radius: 7px; margin-bottom:3%; margin-top: 3%;}
+.servicos h2{font-size: 2.5rem; color: #4aaf26; }
+.servico img{ border-radius: 7px 7px; width: 100%;height: 50%;}
+.inner {padding: 7%;}
+.inner a{ font-size: 1.5em;color:rgb(255, 255, 255); font-weight:700 ;}
+.inner a:hover{color: #4aaf26;}
+.inner h4 { font-size: 1.2em ; color:rgb(255, 255, 255); margin-top: 2%;}
+.inner p{margin-top: 5%; color:rgb(255, 255, 255);}
+
+/*NEWSLETTER*/
+.newslatter h2 {font-size: 1.5em; color: black; font-weight: 700;}
+.newslatter h3 {color: black;}
+.newslatter form{margin-top: 2%;}
+.newslatter input{ width: 100%; background-color:white; color: black; border :2px solid rgba(0, 0,0,0.3 ); padding: 5%; border-radius: 7px;}
+.newslatter button {width: 100%; background-color: black;color:white; padding: 5%; border-radius: 7px; cursor: pointer;margin-top: 2%;}
+
+/*rodape*/
+.social-icons a{font-size: 1.5em; color: rgba(0,0,0,0.8); margin-right: 3%;}
+.social-icons a:last-child{margin-right: 0;}
+.social-icons a:hover{ color:  rgb(0,0,0);}
+.copyright{margin-top: 2%; color: rgba(0,0,0,0.8);}
+.whatsapp {position: fixed;top: 72%;right:1%;padding: 10px;z-index: 10000000; width: 80px; height: 80px;display: none;}
+/*---------------MOBILE FIRST----------------*/
+
+/*---------------MEDIA TYPES------------------*/
+/*SMALL DEVICES - SMARTPHONE*/
+@media screen and (min-width:480px){
+    .logo{width: 130px; float: left; background:url(../img/logo-mobile.png) center center/ 130px no-repeat; font-size: 0;}
+}
+
+/*SMALL DEVICES - TABLET*/
+@media screen and (min-width:668px){
+    .servico{width: 49%; float: left;margin-right: 2%;}
+    .servico:nth-child(3){margin-right: 0; margin-bottom: 2%;}
+    .newslatter h2{font-size: 2em;}
+    .importancia img{width: 30%; float: left;}
+    .vantagens img{width: 30%; float: right;}
+    .newslatter h3{font-size: 1.5em;}
+    .newslatter input{width: 70%; padding: 2%;float: left; margin-right: 1%;}
+    .newslatter button{width: 29%; padding: 2%; float: right;margin-top: 0;}
+}
+
+/* MEDIUM DEVICES - TABLET & DESKTOPS*/
+@media screen and (min-width: 960px) {
+    .title {width: 70%; float: left; text-align: left;}
+    .title h2 {font-size: 3em;}
+    .title h3 {font-size: 2em;}
+    .btn-menu {display: none;}
+    .btn-close {display: none;}
+    .menu {width: auto; height: 56px; line-height: 56px; float: right;
+    display: block !important; position: static; margin-right: 10%;}
+    .menu li {padding: 0; float: left;}
+    .importancia img{width: 25%;}
+    .vantagens img{width: 25%;}
+    .menu li a {color:#000; font-size: 1.2em; padding: 15px; }
+    .menu li a:hover {border: none; color:#4aaf26; }
+    .buttons {width: 30%; float: right; margin-top: 0; }
+    .servico {width: 32%; height: 620px;}
+    .servico:nth-child(3){margin-right: 2%;}
+    .servico:nth-child(4){margin-right: 0}
+    .newsletter input {width: 60%; float: none;}
+    .newsletter button {width: 20%; float: none;}
+}
+
+/* LARGE DEVICES - WIDE SCREENS*/
+@media screen and (min-width: 1024px) {
+    .logo{width: 160px; float: left; background:url(../img/logo.png) center center/ 160px no-repeat; font-size: 0;}
+    .importancia img{width: 20%;}
+    .vantagens img{width: 20%;}
+
+    }
