@@ -93,6 +93,13 @@
     border: 1px solid #4aaf26;
   }
   
+  .radios{
+    max-width: 100%;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .wrapper .form .inputfield p{
      font-size: 14px;
      color: #757575;
@@ -174,5 +181,8 @@
     }
     .wrapper .form .inputfield.terms{
       flex-direction: row;
+      
     }
+
+    .radios{display: flex; align-items: center; justify-content: space-between;}
   }
