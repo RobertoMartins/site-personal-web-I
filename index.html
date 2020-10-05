@@ -10,7 +10,6 @@
         <meta name="author" content="Roberto Martins">
         <link rel="stylesheet" href="css/global.css">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
         <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Raleway|Roboto&display=swap" rel="stylesheet">
         <link rel="icon" href="img/icon-pm.png">
@@ -18,6 +17,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">$('.whatsapp').fadeOut();</script> 
     </head>
     <body>
+        
        <header class="container cabecalho">
            <a href="index.html"> <h1 class="logo">Paulo Maciel - Personal Trainer</h1></a>
            <button class="btn-menu bg-green"><i class="fa fa-bars fa-l"></i></button>
@@ -33,11 +33,15 @@
         </header> 
         <div class="container banner space"><!--BANNER TOPO-->
             <div class="title">
-                <h2>MUDE DE VIDA! </h2>
-                <h3>Prática regular de exercícios físicos traz benefícios como melhora do sono e aumento na expectativa de vida.</h3>
+             <h2>MUDE DE VIDA!</h2>
+             
+            <h3>Prática regular de exercícios físicos traz benefícios como melhora do sono e aumento na expectativa de vida.</h3>
+            <div class="animation">Animação</div>
             </div>
+            
+            
             <div class="buttons">
-                <div class="btn  bg-black"><a href="#servicos" class="btn-cadastrar">Serviços<i class="fa fa-arrow-circle-right"></i></a></div>
+                <div class="btn  bg-black"><a href="cadastro.html" class="btn-cadastrar">Cadastrar<i class="fa fa-arrow-circle-right"></i></a></div>
                 
                 <div class="btn  bg-white "><a href="https://api.whatsapp.com/send?phone=5564992725465&text=Queria uma informação sobre um serviço" class="btn-sobre">Entre em contato<img src=img/whatsapp.png alt="logo whataspp"></a></div>
             </div>
@@ -74,8 +78,8 @@
             </div>
        
         <main class="servicos container " id="servicos"> <!--SERVIÇOS-->
-            <h2>SERVIÇOS</h2>
-            <article class="servico bg-black-smooth">
+           
+            <article class="servico bg-black-smooth" id="serv1">
                 <a href="personal.html"><img src="img/serv-1.jpg" alt="Atendimento Presencial"></a>
                 <div class="inner">
                     <a href="personal.html">Personal Trainer</a>
@@ -86,7 +90,7 @@
                     </p>
                 </div>
             </article>
-            <article class="servico bg-black-smooth">
+            <article class="servico bg-black-smooth" id="serv2">
                 <a href="consultoria.html"><img src="img/serv-2.jpg" alt="Consultoria online"></a>
                 <div class="inner">
                     <a href="consultoria.html">Consultoria Online</a>
@@ -98,7 +102,7 @@
                     </p>
                 </div>
             </article>
-            <article class="servico bg-black-smooth">
+            <article class="servico bg-black-smooth" id="serv3">
                 <a href="grupo.html"><img src="img/serv-3.jpg" alt="Consultoria online"></a>
                 <div class="inner">
                     <a href="grupo.html">Treino em grupo</a>
@@ -115,8 +119,7 @@
                <h2>Cadastre-se agora!</h2>
                <h3>Receba dicas de treino e muito mais</h3> 
                <form>
-                   <input type="email" name="email" placeholder="Seu email">
-                   <button>Cadastrar</button>
+                   <button onclick="window.open('cadastro.html')">Cadastrar</button>
                </form>
         </section>
         <!--RODAPÉ-->
@@ -127,18 +130,27 @@
                 <a href="#"><i class="fa fa-instagram"></i></a>
                 <a href="#"><i class="fa fa-envelope"></i></a>
             </div>
-            <div>
+            <div id="whats">
                 <a href="https://api.whatsapp.com/send?phone=5564992725465&text=Queria uma informação sobre um serviço" target="_blank"><img  class="whatsapp" src="img/whatsapp.png" /></a>
                 </div>
+                <div id="whats-border">
+                    <a href="https://api.whatsapp.com/send?phone=5564992725465&text=Queria uma informação sobre um serviço" target="_blank"><img  class="whatsapp" src="img/whatsapp-border.png" /></a>
+                    </div>
             <p class="copyright">
                 Copyright © Personal Name 2020. Todos os direitos reservados.
             </p>
 
         </footer>
+        
+
+        <!--Animations JS-->
+        <script src="scripts/animation.js">change()</script>
+
         <!--JQUERY-->
            <script>
                $(".btn-menu").click(function(){
                    $(".menu").show();
+                   
                });
                $(".btn-close").click(function(){
                    $(".menu").hide();
@@ -147,8 +159,10 @@
                $(document).ready(function() {
                 // Exibe ou oculta o botão
                     $(window).scroll(function() {
+                        
                         if ($(this).scrollTop() > 100) {
                             $('.whatsapp').fadeIn();
+                            
                         } else {
                             $('.whatsapp').fadeOut();
                                 }

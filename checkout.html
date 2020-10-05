@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,inicial-scale-1">
+        <title>Personal Name</title>
+        <meta name="description" content="Personal trainer com serviços de consultoria online">
+        <meta name="keywords" content="Emagrecimento, Treino, Personal,Consultoria online">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Roberto Martins">
+        <link rel="stylesheet" href="css/global.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Raleway|Roboto&display=swap" rel="stylesheet">
+        <link rel="icon" href="img/icon-pm.png">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">$('.whatsapp').fadeOut();</script> 
+    </head>
+    <body onload="montarTexto()">
+       <header class=" container cabecalho">
+           <a href="index.html"> <h1 class="logo">Paulo Maciel - Personal Trainer</h1></a>
+           <button class="btn-menu bg-green"><i class="fa fa-bars fa-l"></i></button>
+           <nav class="menu">
+               <a class="btn-close"><i class="fa fa-times"></i></a>
+               <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="personal.html">Personal Trainer</a></li>
+                   <li><a href="consultoria.html">Consultoria Online</a></li>
+                   <li><a href="grupo.html">Treino em Grupo</a></li>     
+               </ul>
+           </nav>
+        </header> 
+        <main class="container">
+            <div class="importancia container space " id="concluido">
+                
+                
+                
+            </div>
+            <a href="index.html" class="interesse">Voltar para o inicio</a>
+    </main>
+        
+        <!--RODAPÉ-->
+        <footer class="rodape container bg-green">
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-google"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+            </div>
+            
+            <p class="copyright">
+                Copyright © Personal Name 2020. Todos os direitos reservados.
+            </p>
+
+        </footer>
+        <!--JQUERY-->
+           <script>
+               $(".btn-menu").click(function(){
+                   $(".menu").show();
+               });
+               $(".btn-close").click(function(){
+                   $(".menu").hide();
+               });
+               
+           </script>
+   <script src="scripts/geraTexto.js"></script>
+    </body>
+</html>
