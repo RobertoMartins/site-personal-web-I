@@ -68,3 +68,6 @@ function valida_form(){
     }
     return true;
 }
+function irCadastro(){
+    window.location.href="cadastro.html";
+}
