@@ -80,9 +80,8 @@ img{max-width: 100%;}
 .newslatter{margin-top: 10px;}
 .newslatter h2 {font-size: 1.5em; color: black; font-weight: 700; display: flex; align-items: center; justify-content: center; }
 .newslatter h3 {color: black;}
-.newslatter form{margin-top: 2%;}
-.newslatter button {width: 100%; background-color: black;color:white; padding: 5%; border-radius: 7px; cursor: pointer;margin-top: 2%;}
-
+.newslatter .butCad {width: 100%; height: 20%;margin-top: 2%; background-color: black;color:white; padding: 5%; border-radius: 7px; cursor: pointer;margin-top: 2%;}
+.newslatter .butCad a{ display:block; width: 100%; height: 100%;}
 /*rodape*/
 .social-icons a{font-size: 1.5em; color: rgba(0,0,0,0.8); margin-right: 3%;}
 .social-icons a:last-child{margin-right: 0;}
@@ -101,7 +100,6 @@ img{max-width: 100%;}
     .importancia img{width: 30%; float: left;}
     .vantagens img{width: 30%; float: right;}
     .newslatter h3{font-size: 1.5em;}
-    .newslatter button{width: 40%; padding: 2%;margin-top: 0;}
 }
 
 /* MEDIUM DEVICES - TABLET & DESKTOPS*/
@@ -122,12 +120,12 @@ img{max-width: 100%;}
     .menu li a {color:#000; font-size: 1.2em; padding: 15px; }
     .menu li a:hover {border: none; color:#4aaf26; }
     .buttons {width: 30%; float: right; margin-top: 0; }
+    .newslatter .butCad {width: 30%; height: 50%; margin: 2px auto;}
+    .newslatter .butCad a{font-size: 1.5em;}
     .servico {width: 32%; height: wrap;}
     .servico:nth-child(3){margin-right: 2%;}
     .servico:nth-child(4){margin-right: 0}
-    .newslatter{margin-top: 0;}
-    .newsletter input {width: 60%; float: none;}
-    .newsletter button {width: 20%; float: none;}
+  
     .animation{animation:changeBackgroundImageDesk 1.5s infinite;}
 }
 
