@@ -1,6 +1,6 @@
 # Site para Personal Trainer 
 
-Foi desenvolvido um site utilizando apenas HTML, CSS e JS, aprendidos durante a disciplina de Programação para um Web-I. As paginas exibem um exemplo de um site para um personal trainer que oferece serviços de consultoria online.
+Foi desenvolvido um site utilizando apenas HTML, CSS e JS, aprendidos durante a disciplina de Programação para Web-I. As paginas exibem um exemplo de um site para um personal trainer que oferece serviços de consultoria online.
 
 ## :hammer: Ferramentas & Tecnologias
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
