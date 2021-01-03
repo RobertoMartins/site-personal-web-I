@@ -9,4 +9,4 @@ Foi desenvolvido um site utilizando apenas HTML, CSS e JS, aprendidos durante a 
 ![VSCode](https://img.shields.io/badge/-VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
 
 ## ScreenShots
- <img src="img/screens.png">
+ <img src="images/screens.png">
