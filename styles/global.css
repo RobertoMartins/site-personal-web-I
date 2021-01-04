@@ -18,7 +18,7 @@ img{max-width: 100%;}
 .space{margin-top: 120px;}
 /*Cabecalho*/
 .cabecalho{ height: 120px ;position:fixed; background: #fff; margin: 0; z-index: 1;}
-.logo{width: 100px; height:90px ; float: left; background:url(../img/logo-mobile.png) center center/ 100px no-repeat; font-size: 0;}
+.logo{width: 100px; height:90px ; float: left; background:url(../images/logo-mobile.png) center center/ 100px no-repeat; font-size: 0;}
 .btn-menu{width: 50px; height: 50px; float: right; text-align: center; color: white; border-radius:50px ; cursor: pointer; margin-top: 5px;}
 
 /*MENU*/
@@ -31,7 +31,7 @@ img{max-width: 100%;}
 .menu li a:hover{ border:1px solid #4aaf26;}
 
 /*Banner*/
-.banner{ background: url(../img/fundo-banner.png) no-repeat fixed; height: 50%;}
+.banner{ background: url(../images/fundo-banner.png) no-repeat fixed; height: 50%;}
 .title{width: 100%;}
 .title  h2{font-size: 1.7em; color:#fff; font-weight: 500; margin: 0; }
 .title h3{font-size: 1em; color:#fff;font-weight: 100;}
@@ -130,7 +130,7 @@ img{max-width: 100%;}
 
 /* LARGE DEVICES - WIDE SCREENS*/
 @media screen and (min-width: 1240px) {
-    .logo{width: 160px; float: left; background:url(../img/logo.png) center center/ 160px no-repeat; font-size: 0;}
+    .logo{width: 160px; float: left; background:url(../images/logo.png) center center/ 160px no-repeat; font-size: 0;}
     .importancia img{width: 20%;}
     .servicos{grid-template-rows: 1fr ; grid-template-columns: 1fr 1fr 1fr;}
     .vantagens img{width: 20%;}
@@ -141,28 +141,28 @@ img{max-width: 100%;}
 
 @keyframes changeBackgroundImageDesk{
     0% {
-        background: url(../img/c-verde.png) no-repeat;
+        background: url(../images/c-verde.png) no-repeat;
     }
 
     50% {
-        background: url(../img/c-branco.png)no-repeat;
+        background: url(../images/c-branco.png)no-repeat;
     }
 
     100%{
-        background: url(../img/c-verde.png)no-repeat;
+        background: url(../images/c-verde.png)no-repeat;
     }
 }
 
 @keyframes changeBackgroundImage{
     0% {
-        background: url(../img/c-verde-mob.png) no-repeat;
+        background: url(../images/c-verde-mob.png) no-repeat;
     }
 
     50% {
-        background: url(../img/c-branco-mob.png)no-repeat;
+        background: url(../images/c-branco-mob.png)no-repeat;
     }
 
     100%{
-        background: url(../img/c-verde-mob.png)no-repeat;
+        background: url(../images/c-verde-mob.png)no-repeat;
     }
 }
